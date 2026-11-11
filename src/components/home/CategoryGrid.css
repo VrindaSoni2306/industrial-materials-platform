@@ -1,0 +1,73 @@
+/* CategoryGrid.css */
+.categories {
+  padding: 80px 0;
+  background: var(--color-off-white);
+}
+
+.categories__header {
+  margin-bottom: 48px;
+}
+
+.categories__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background: var(--cat-bg, var(--color-blue-pale));
+  border: 1.5px solid var(--cat-border, var(--color-border));
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--cat-icon, var(--color-blue));
+}
+
+.category-card__icon-wrap {
+  width: 52px; height: 52px;
+  flex-shrink: 0;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  font-size: 1.5rem;
+}
+
+.category-card__body { flex: 1; }
+
+.category-card__name {
+  font-family: var(--font-heading);
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--cat-text, var(--color-navy));
+  margin-bottom: 6px;
+}
+
+.category-card__desc {
+  font-size: .82rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+
+.category-card__count {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--cat-icon, var(--color-blue));
+  letter-spacing: .2px;
+}
+
+@media (max-width: 600px) {
+  .categories__grid { grid-template-columns: 1fr; }
+}

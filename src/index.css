@@ -1,0 +1,46 @@
+:root {
+  --color-navy: #102b46;
+  --color-navy-mid: #183e61;
+  --color-blue: #1e5fad;
+  --color-blue-light: #377fc8;
+  --color-blue-pale: #eaf2fa;
+  --color-amber: #e5a331;
+  --color-amber-light: #f3cf83;
+  --color-silver-light: #c5d1dc;
+  --color-success: #21845b;
+  --color-error: #b42318;
+  --color-white: #fff;
+  --color-off-white: #f5f7f9;
+  --color-text: #263648;
+  --color-text-muted: #647386;
+  --color-border: #dce3e9;
+  --font-heading: 'Aptos Display', 'Trebuchet MS', sans-serif;
+  --font-body: 'Aptos', 'Segoe UI', sans-serif;
+  --header-h: 72px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --shadow-sm: 0 3px 12px rgba(16, 43, 70, .08);
+  --shadow-md: 0 12px 30px rgba(16, 43, 70, .14);
+  --shadow-lg: 0 18px 42px rgba(16, 43, 70, .2);
+  --shadow-blue: 0 5px 16px rgba(30, 95, 173, .2);
+  --transition: 180ms ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--color-white);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+code { font-family: Consolas, 'Courier New', monospace; }
+:focus-visible { outline: 3px solid rgba(30, 95, 173, .55); outline-offset: 2px; }
